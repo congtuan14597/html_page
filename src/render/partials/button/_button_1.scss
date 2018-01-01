@@ -1,0 +1,17 @@
+ .button_1 {
+     cursor: pointer;
+     outline: none;
+     & .btn {
+         &__circle {
+             @include btnBorder(25px, $cl-white, uppercase);
+             &:hover {
+                 color: $cl-white;
+                 background-color: $cl-btn-submit-bg;
+                 border-color: $cl-btn-submit-bg;
+             }
+         }
+         &__border {
+             @include btnBorder(4px, $cl-btn-learn-more, uppercase);
+         }
+     }
+ }

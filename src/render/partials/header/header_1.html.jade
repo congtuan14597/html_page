@@ -1,0 +1,18 @@
+.header_1.__container.row
+  .col-sm-5.offset-sm-1
+    .__text
+      h3.__sologan impress every
+        br
+        | visitor!
+      ul.__services
+        - var links=[{"text": "responsive template", "icon": "fa-paper-plane"}, {"text": "retina ready", "icon": "fa-hand-o-right"}, {"text": "155+ HTML Pages", "icon": "fa-thumbs-up"}, {"text": "mailchimp intergrated", "icon": "fa-cog"}]
+          each item in links
+            li
+              a.__services--link
+                span.__services--icon
+                  i.fa(class= item.icon)
+                p.__services--text= item.text
+    .__register
+      p.__register--label register for a free demo!
+      form.__form.form-email
+        input(type="text" placeholder="Enter Your Email Address...").__input--email

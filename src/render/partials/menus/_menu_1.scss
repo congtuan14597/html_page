@@ -1,0 +1,24 @@
+.menu_1 {
+    & .menu {
+        &__nav {
+            &--link {
+                text-transform: uppercase;
+                color: $cl-white;
+                &:hover {
+                    background-color: $cl-btn-menu-active;
+                    border-radius: 3px;
+                    color: $cl-white;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__search,
+        &__cart {
+            color: $cl-white;
+            margin-right: 25px;
+            &:hover {
+                color: $cl-btn-menu-active;
+            }
+        }
+    }
+}
