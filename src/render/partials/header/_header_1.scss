@@ -1,0 +1,63 @@
+.header_1 {
+    background: $header-3-bg no-repeat;
+    &.__container {
+        margin: auto;
+    }
+    & .__text {
+        padding-top: 40px;
+    }
+    & .__sologan {
+        text-align: left;
+        color: $cl-white;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    & .__services {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        &--link {
+            display: block;
+        }
+        &--icon {
+            @include circle(30px);
+            background: $cl-icons-bg;
+            margin-left: 10px;
+            color: $cl-white;
+            display: inline-block;
+            position: relative;
+            &>i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &--text {
+            text-transform: capitalize;
+            color: #1c1d1d;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    & .__register {
+        &--label {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $cl-white;
+        }
+        padding: 50px 0 50px 0;
+    }
+    & .__input--email {
+        height: 36px;
+        line-height: 18px;
+        width: 280px;
+        padding: 0px 10px;
+        border: none;
+        border-radius: 10px;
+    }
+}

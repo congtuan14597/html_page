@@ -1,0 +1,25 @@
+.header_2 {
+    &.__container {
+        margin: auto;
+    }
+    & .__menu {
+        padding-top: 10px;
+    }
+    background: $header-3-bg no-repeat;
+    text-align: center;
+    & .__text {
+        padding: 150px 0;
+        color: $cl-white;
+    }
+    & .__title {
+        font-size: $f-largest;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    & .__description {
+        margin: 20px;
+    }
+    & .__btn {
+        margin-top: 20px;
+    }
+}
