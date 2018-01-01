@@ -1,17 +1,19 @@
- .button_1 {
+$colorBackgroundIcon: $cl-blue;
+$colorText: $cl-white;
+.button_1 {
      cursor: pointer;
      outline: none;
      & .btn {
          &__circle {
-             @include btnBorder(25px, $cl-white, uppercase);
+             @include btnBorder(25px, $colorText, uppercase);
              &:hover {
-                 color: $cl-white;
-                 background-color: $cl-btn-submit-bg;
-                 border-color: $cl-btn-submit-bg;
+                 color: $colorText;
+                 background-color: $colorBackgroundIcon;
+                 border-color: $colorBackgroundIcon;
              }
          }
          &__border {
-             @include btnBorder(4px, $cl-btn-learn-more, uppercase);
+             @include btnBorder(4px, $colorBackgroundIcon, uppercase);
          }
      }
  }

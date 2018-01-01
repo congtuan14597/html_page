@@ -1,4 +1,4 @@
-.header_2.__container.menu_1.button_1
+.header_2.h-100.__container.menu_1.button_1
   ul.nav.__menu
     - var menu=[{"text": "Home", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "blog", "icon": "fa-home"}, {"text": "pages", "icon": "fa-home"}, {"text": "shortodes", "icon": "fa-home"}, {"text": "", "icon": "fa-search"}, {"text": "", "icon": "fa-shopping-cart"}]
       each item in menu
@@ -6,8 +6,9 @@
           a(href="#").nav-link.menu__nav--link
             i.fa(class= item.icon)
             span=" " + item.text
-  .row
-    .col-sm-4.offset-sm-4.__text
-      h2.__title Welcome To Salt
-      p.__description Your one stop solution for a stunning website
-      button(type="button").btn.btn__circle know more
+  .container-fluid
+    .row
+      .col-sm-6.offset-sm-3.__text
+        h2.__title Welcome To Salt
+        p.__description Your one stop solution for a stunning website
+        button(type="button").btn.btn__circle know more

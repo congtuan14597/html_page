@@ -1,23 +1,16 @@
+$colorBackgroundIcon: $cl-blue;
+$colorText: $cl-white;
 .menu_1 {
     & .menu {
         &__nav {
             &--link {
                 text-transform: uppercase;
-                color: $cl-white;
+                color: $colorText;
                 &:hover {
-                    background-color: $cl-btn-menu-active;
+                    background-color: $colorBackgroundIcon;
                     border-radius: 3px;
-                    color: $cl-white;
                     text-decoration: none;
                 }
-            }
-        }
-        &__search,
-        &__cart {
-            color: $cl-white;
-            margin-right: 25px;
-            &:hover {
-                color: $cl-btn-menu-active;
             }
         }
     }

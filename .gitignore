@@ -86,6 +86,7 @@ typings/
 *.rar
 *.tar
 *.zip
+*.psd
 #*.bat
 
 # Logs and databases #

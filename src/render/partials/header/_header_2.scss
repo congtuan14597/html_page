@@ -1,3 +1,5 @@
+$imageBackground: $bg-blur-black;
+$colorText: $cl-white;
 .header_2 {
     &.__container {
         margin: auto;
@@ -5,11 +7,11 @@
     & .__menu {
         padding-top: 10px;
     }
-    background: $header-3-bg no-repeat;
+    background: $imageBackground no-repeat;
     text-align: center;
     & .__text {
         padding: 150px 0;
-        color: $cl-white;
+        color: $colorText;
     }
     & .__title {
         font-size: $f-largest;
