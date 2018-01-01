@@ -35,62 +35,55 @@ $background-color: $cl-btn-submit-bg;
     & .__footer {
         background: #fff;
     }
-    & .__message--right {
-        font-weight: 100;
-        background: $background-color;
+    & .__message {
         position: relative;
         border-radius: 10px !important;
-        color: #fff;
-        &:before {
-            content: "";
-            position: absolute;
-            width: 19px;
-            height: 15px;
+        &--right {
             background: $background-color;
-            right: -10px;
-            bottom: 0px;
-            border-radius: 50%;
+            color: #fff;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 19px;
+                height: 15px;
+                background: $background-color;
+                right: -10px;
+                bottom: 0px;
+                border-radius: 50%;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 23px;
+                background: #fff;
+                right: -17px;
+                bottom: 1px;
+                border-radius: 50%;
+            }
         }
-        &:after {
-            content: "";
-            position: absolute;
-            width: 17px;
-            height: 23px;
-            background: #fff;
-            right: -17px;
-            bottom: 1px;
-            border-radius: 50%;
-        }
-    }
-    & .__message--left {
-        font-weight: 100;
-        position: relative;
-        background: #eee;
-        border-radius: 10px !important;
-        &:before {
-            content: "";
-            position: absolute;
-            width: 19px;
-            height: 15px;
+        &--left {
             background: #eee;
-            left: -10px;
-            bottom: 0px;
-            border-radius: 50%;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 19px;
+                height: 15px;
+                background: #eee;
+                left: -10px;
+                bottom: 0px;
+                border-radius: 50%;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 23px;
+                background: #fff;
+                left: -17px;
+                bottom: 1px;
+                border-radius: 50%;
+            }
         }
-        &:after {
-            content: "";
-            position: absolute;
-            width: 17px;
-            height: 23px;
-            background: #fff;
-            left: -17px;
-            bottom: 1px;
-            border-radius: 50%;
-        }
-    }
-    & .__message--error2 {
-        color: darkred;
-        text-align: center;
-        padding: 1em;
     }
 }
