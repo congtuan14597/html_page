@@ -1,11 +1,16 @@
 //------------------- BACKGROUND --------------------
-$bg-blur-black: url('/images/backgrounds/BackgroundBookBlurBlack.jpg');
-$bg-blur-light: url('/images/backgrounds/BackgroundBookBlurLight.jpg');
+$bg-book-blur-dark: url('/images/backgrounds/BackgroundBookBlurBlack.jpg');
+$bg-book-blur-light: url('/images/backgrounds/BackgroundBookBlurLight.jpg');
 //------------------- COLOR --------------------
+$cl-light-white: #fff;
 $cl-white: #f8f8f8;
+$cl-dark-white: #ddd;
+$cl-light-gray: #bbb;
 $cl-gray: #999;
-$cl-dark-white: #dddddd;
+$cl-dark-gray: #777;
+$cl-light-black: #555;
 $cl-black: #333;
+$cl-dark-black: #000;
 $cl-red: rgb(255,59,48);
 $cl-orange: rgb(255,149,0);
 $cl-yellow: rgb(255,204,0);

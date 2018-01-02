@@ -5,11 +5,11 @@ $menu_1__colorBorder: $cl-white !default;
     & .menu {
         &__nav {
             &--link {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 color: $menu_1__colorText;
                 &:hover {
                     background-color: $menu_1__colorBackgroundIcon;
-                    border-radius: 3px;
+                    border-radius: 4px;
                     text-decoration: none;
                 }
             }
