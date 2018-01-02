@@ -1,34 +1,20 @@
 //------------------- BACKGROUND --------------------
-$bg-blur-black: url('./../images/backgrounds/BackgroundBookBlurBlack.jpg');
-$bg-blur-light: url('./../images/backgrounds/BackgroundBookBlurLight.jpg');
+$bg-blur-black: url('/images/backgrounds/BackgroundBookBlurBlack.jpg');
+$bg-blur-light: url('/images/backgrounds/BackgroundBookBlurLight.jpg');
 //------------------- COLOR --------------------
-// Common
 $cl-white: #f8f8f8;
+$cl-gray: #999;
+$cl-dark-white: #dddddd;
 $cl-black: #333;
-$cl-red: rgb(255,
-59,
-48);
-$cl-orange: rgb(255,
-149,
-0);
-$cl-yellow: rgb(255,
-204,
-0);
-$cl-green: rgb(76,
-217,
-100);
-$cl-teal-blue: rgb(90,
-200,
-250);
-$cl-blue: rgb(0,
-122,
-255);
-$cl-purple: rgb(88,
-86,
-214);
-$cl-pink: rgb(255,
-45,
-85);
+$cl-red: rgb(255,59,48);
+$cl-orange: rgb(255,149,0);
+$cl-yellow: rgb(255,204,0);
+$cl-green: rgb(76,217,100);
+$cl-teal-blue: rgb(90,200,250);
+$cl-blue: rgb(14,122,254);
+$cl-light-blue: lightblue;
+$cl-purple: rgb(88,86,214);
+$cl-pink: rgb(255,45,85);
 // Common
 $f-largest: 300%;
 $f-larger: 150%;
