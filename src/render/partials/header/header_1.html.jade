@@ -1,4 +1,12 @@
-.header_1.h-100.__container.row
+.header_1.h-100.menu_1.__container
+  ul.nav.__menu
+    - var menu=[{"text": "Home", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "blog", "icon": "fa-home"}, {"text": "pages", "icon": "fa-home"}, {"text": "shortcodes", "icon": "fa-home"}, {"text": "", "icon": "fa-search"}, {"text": "", "icon": "fa-shopping-cart"}]
+      each item in menu
+        li.nav-item
+          a(href="#").nav-link.menu__nav--link
+            i.fa(class= item.icon)
+            span=" " + item.text
+  .row
   .col-sm-5.offset-sm-1
     .__text
       h3.__sologan impress every
