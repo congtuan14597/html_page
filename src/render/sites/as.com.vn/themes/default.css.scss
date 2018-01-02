@@ -1,0 +1,13 @@
+@import '../../../styles/abstracts/all';
+// Theme
+$chat-box_1__colorBackgroundLeftMessage: $cl-light-blue;
+$chat-box_1__colorTextLeftMessage: $cl-black;
+// Chat-box
+@import '../../../partials/chat-box/chat-box_1';
+// Header
+@import '../../../partials/header/header_1';
+@import '../../../partials/header/header_2';
+// Menu
+@import '../../../partials/menus/menu_1';
+// Button
+@import '../../../partials/button/button_1';

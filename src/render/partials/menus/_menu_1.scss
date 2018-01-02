@@ -1,13 +1,14 @@
-$colorBackgroundIcon: $cl-blue;
-$colorText: $cl-white;
+$menu_1__colorBackgroundIcon: $cl-blue !default;
+$menu_1__colorText: $cl-white !default;
+$menu_1__colorBorder: $cl-white !default;
 .menu_1 {
     & .menu {
         &__nav {
             &--link {
                 text-transform: uppercase;
-                color: $colorText;
+                color: $menu_1__colorText;
                 &:hover {
-                    background-color: $colorBackgroundIcon;
+                    background-color: $menu_1__colorBackgroundIcon;
                     border-radius: 3px;
                     text-decoration: none;
                 }

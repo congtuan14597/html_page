@@ -1,5 +1,5 @@
-$imageBackground: $bg-blur-black;
-$colorText: $cl-white;
+$header_2__imageBackground: $bg-blur-black !default;
+$header_2__colorText: $cl-white !default;
 .header_2 {
     &.__container {
         margin: auto;
@@ -7,11 +7,11 @@ $colorText: $cl-white;
     & .__menu {
         padding-top: 10px;
     }
-    background: $imageBackground no-repeat;
+    background: $header_2__imageBackground no-repeat;
     text-align: center;
     & .__text {
         padding: 150px 0;
-        color: $colorText;
+        color: $header_2__colorText;
     }
     & .__title {
         font-size: $f-largest;

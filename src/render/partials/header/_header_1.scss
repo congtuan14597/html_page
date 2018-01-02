@@ -1,9 +1,10 @@
-$imageBackground: $bg-blur-light;
-$colorBackgroundIcon: $cl-blue;
-$colorTextIcon: $cl-white;
-$colorText: $cl-black;
+$header_1__imageBackground: $bg-blur-light !default;
+$header_1__colorBackgroundIcon: $cl-blue !default;
+$header_1__colorTextIcon: $cl-white !default;
+$header_1__colorText: $cl-black !default;
+$header_1__colorBorderEmail: $cl-gray !default;
 .header_1 {
-    background: $imageBackground no-repeat;
+    background: $header_1__imageBackground no-repeat;
     &.__container {
         margin: auto;
     }
@@ -12,7 +13,7 @@ $colorText: $cl-black;
     }
     & .__sologan {
         text-align: left;
-        color: $colorText;
+        color: $header_1__colorText;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -26,9 +27,9 @@ $colorText: $cl-black;
         }
         &--icon {
             @include circle(30px);
-            background: $colorBackgroundIcon;
+            background: $header_1__colorBackgroundIcon;
             margin-left: 10px;
-            color: $colorTextIcon;
+            color: $header_1__colorTextIcon;
             display: inline-block;
             position: relative;
             &>i {
@@ -40,7 +41,7 @@ $colorText: $cl-black;
         }
         &--text {
             text-transform: capitalize;
-            color: $colorText;
+            color: $header_1__colorText;
             display: inline-block;
             vertical-align: middle;
             padding-left: 10px;
@@ -51,16 +52,15 @@ $colorText: $cl-black;
             font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
-            color: $colorText;
+            color: $header_1__colorText;
         }
         padding: 50px 0 50px 0;
     }
     & .__input--email {
         height: 36px;
-        line-height: 18px;
         width: 280px;
         padding: 0px 10px;
-        border: none;
-        border-radius: 10px;
+        border: 1px solid $header_1__colorBorderEmail;
+        border-radius: 3px;
     }
 }

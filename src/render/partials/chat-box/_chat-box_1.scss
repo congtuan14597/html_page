@@ -1,16 +1,21 @@
-$background-color: $cl-blue;
+$chat-box_1__colorBackground: $cl-blue !default;
+$chat-box_1__colorText: $cl-white !default;
+$chat-box_1__colorBackgroundRightMessage: $cl-blue !default;
+$chat-box_1__colorTextRightMessage: $cl-white !default;
+$chat-box_1__colorBackgroundLeftMessage: $cl-orange !default;
+$chat-box_1__colorTextLeftMessage: $cl-white !default;
 .chat-box_1 {
     border: none;
+    z-index: 99;
     &.__container {
         position: fixed;
         right: 10px;
         bottom: 10px;
-        max-height: 360px;
         max-width: 280px;
     }
     & .__header {
-        background: $background-color;
-        color: #fff;
+        background: $chat-box_1__colorBackground;
+        color: $chat-box_1__colorText;
         border: none;
     }
     & .__body {
@@ -34,16 +39,15 @@ $background-color: $cl-blue;
     }
     & .__message {
         position: relative;
-        border-radius: 10px;
         &--right {
-            background: $background-color;
-            color: #fff;
+            background: $chat-box_1__colorBackgroundRightMessage;
+            color: $chat-box_1__colorTextRightMessage;
             &:before {
                 content: "";
                 position: absolute;
                 width: 19px;
                 height: 15px;
-                background: $background-color;
+                background: $chat-box_1__colorBackgroundRightMessage;
                 right: -10px;
                 bottom: 0px;
                 border-radius: 50%;
@@ -60,13 +64,14 @@ $background-color: $cl-blue;
             }
         }
         &--left {
-            background: #eee;
+            background: $chat-box_1__colorBackgroundLeftMessage;
+            color: $chat-box_1__colorTextLeftMessage;
             &:before {
                 content: "";
                 position: absolute;
                 width: 19px;
                 height: 15px;
-                background: #eee;
+                background: $chat-box_1__colorBackgroundLeftMessage;
                 left: -10px;
                 bottom: 0px;
                 border-radius: 50%;
