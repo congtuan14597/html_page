@@ -7,7 +7,7 @@
             i.fa(class= item.icon)
             span=" " + item.text
   .row
-  .col-sm-5.offset-sm-1
+  .col-sm-3.offset-sm-1
     .__text
       h3.__sologan impress every
         br
@@ -23,4 +23,7 @@
     .__register
       p.__register--label register for a free demo!
       form.__form
-        input(type="text" placeholder="Enter Your Email Address...").__input--email
+        .input-group
+          input(type="text" placeholder="Enter Your Email Address...").form-control
+          .input-group-append
+            input(type="submit" placeholder="Submit").btn.btn-primary
