@@ -1,4 +1,4 @@
-.chat-box_1.__container
+.chat_box_1.__container
   .card.border-0
     .card-header.__header
       .row
@@ -6,13 +6,14 @@
           a.panel-title.h6 Hỗ trợ khách hàng
           a.fa.fa-pull-right.fa-angle-double-down
     .card-body.small.__body
-      .row
-        .col-12
+      ul.list-unstyled.row
+        li.col-12
           .rounded.p-2.mb-2.float-left.__message.__message--left.__text Chào quý khách, vui lòng nhập thông tin quý khách cần hỗ trợ.
-        .col-12
+        li.col-12
           .rounded.p-2.mb-2.float-right.__message.__message--right.__text Xin chào
-    .card-footer.p-1.__footer
-      form
+    .card-footer.__footer
+      form.__form
         .input-group
-          input.form-control.__input(type="text" placeholder="Nhập nội dung")
-          button.btn.__btn(type="submit") Gửi
+          input(type="text" placeholder="Nhập nội dung...").form-control
+          .input-group-append
+            input(type="submit" placeholder="Submit" value="Gửi").btn.__btn--submit

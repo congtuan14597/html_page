@@ -1,12 +1,20 @@
-$chat-box_1__colorTextHeader: $cl-white !default;
-$chat-box_1__colorBackgroundHeader: $cl-blue !default;
-$chat-box_1__colorBackgroundBody: $cl-white !default;
-$chat-box_1__colorBackgroundFooter: $cl-white !default;
-$chat-box_1__colorBackgroundRightMessage: $cl-blue !default;
-$chat-box_1__colorTextRightMessage: $cl-white !default;
-$chat-box_1__colorBackgroundLeftMessage: $cl-orange !default;
-$chat-box_1__colorTextLeftMessage: $cl-white !default;
-.chat-box_1 {
+// Btn
+$chat_box_1__colorBackgroundBtnSubmit: $cl-blue !default;
+$chat_box_1__colorTextBtnSubmit: $cl-white !default;
+// Header
+$chat_box_1__colorBackgroundHeader: $cl-blue !default;
+$chat_box_1__colorTextHeader: $cl-white !default;
+// Body
+$chat_box_1__colorBackgroundBody: $cl-white !default;
+// Footer
+$chat_box_1__colorBackgroundFooter: $cl-white !default;
+// Right
+$chat_box_1__colorBackgroundRightMessage: $cl-blue !default;
+$chat_box_1__colorTextRightMessage: $cl-white !default;
+// Left
+$chat_box_1__colorBackgroundLeftMessage: $cl-orange !default;
+$chat_box_1__colorTextLeftMessage: $cl-white !default;
+.chat_box_1 {
     border: none;
     z-index: 99;
     &.__container {
@@ -16,8 +24,8 @@ $chat-box_1__colorTextLeftMessage: $cl-white !default;
         max-width: 280px;
     }
     & .__header {
-        background: $chat-box_1__colorBackgroundHeader;
-        color: $chat-box_1__colorTextHeader;
+        background: $chat_box_1__colorBackgroundHeader;
+        color: $chat_box_1__colorTextHeader;
         border: none;
     }
     & .__body {
@@ -30,26 +38,29 @@ $chat-box_1__colorTextLeftMessage: $cl-white !default;
         padding-top: 4px;
     }
     & .__btn {
-        border: none;
-        display: inline-block;
+        &--submit {
+            background-color: $chat_box_1__colorBackgroundBtnSubmit;
+            border: 1px solid $chat_box_1__colorBackgroundBtnSubmit;
+            color: $chat_box_1__colorTextBtnSubmit;
+        }
     }
     & .__text {
         max-width: 75%;
     }
     & .__footer {
-        background: $chat-box_1__colorBackgroundFooter;
+        background: $chat_box_1__colorBackgroundFooter;
     }
     & .__message {
         position: relative;
         &--right {
-            background: $chat-box_1__colorBackgroundRightMessage;
-            color: $chat-box_1__colorTextRightMessage;
+            background: $chat_box_1__colorBackgroundRightMessage;
+            color: $chat_box_1__colorTextRightMessage;
             &:before {
                 content: "";
                 position: absolute;
                 width: 19px;
                 height: 15px;
-                background: $chat-box_1__colorBackgroundRightMessage;
+                background: $chat_box_1__colorBackgroundRightMessage;
                 right: -10px;
                 bottom: 0px;
                 border-radius: 50%;
@@ -59,21 +70,21 @@ $chat-box_1__colorTextLeftMessage: $cl-white !default;
                 position: absolute;
                 width: 17px;
                 height: 23px;
-                background: $chat-box_1__colorBackgroundBody;
+                background: $chat_box_1__colorBackgroundBody;
                 right: -17px;
                 bottom: 1px;
                 border-radius: 50%;
             }
         }
         &--left {
-            background: $chat-box_1__colorBackgroundLeftMessage;
-            color: $chat-box_1__colorTextLeftMessage;
+            background: $chat_box_1__colorBackgroundLeftMessage;
+            color: $chat_box_1__colorTextLeftMessage;
             &:before {
                 content: "";
                 position: absolute;
                 width: 19px;
                 height: 15px;
-                background: $chat-box_1__colorBackgroundLeftMessage;
+                background: $chat_box_1__colorBackgroundLeftMessage;
                 left: -10px;
                 bottom: 0px;
                 border-radius: 50%;
@@ -83,7 +94,7 @@ $chat-box_1__colorTextLeftMessage: $cl-white !default;
                 position: absolute;
                 width: 17px;
                 height: 23px;
-                background: $chat-box_1__colorBackgroundBody;
+                background: $chat_box_1__colorBackgroundBody;
                 left: -17px;
                 bottom: 1px;
                 border-radius: 50%;

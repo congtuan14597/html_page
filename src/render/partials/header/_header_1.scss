@@ -1,8 +1,15 @@
 $header_1__imageBackground: $bg-book-blur-dark !default;
+// Icon
 $header_1__colorBackgroundIcon: $cl-blue !default;
 $header_1__colorTextIcon: $cl-white !default;
-$header_1__colorText: $cl-black !default;
-$header_1__colorBorderEmail: $cl-dark-white !default;
+// Text
+$header_1__colorTextSlogan: $cl-black !default;
+$header_1__colorTextService: $cl-black !default;
+$header_1__colorTextRegister: $cl-black !default;
+//
+$header_1__colorBorderEmail: $cl-white !default;
+$header_1__colorBackgroundBtnSubmit: $cl-blue !default;
+$header_1__colorTextBtnSubmit: $cl-white !default;
 .header_1 {
     background: $header_1__imageBackground no-repeat;
     &.__container {
@@ -11,27 +18,25 @@ $header_1__colorBorderEmail: $cl-dark-white !default;
     & .__menu {
         padding-top: 8px;
     }
-    & .__text {
+    & .__infor {
         padding: 48px 0px 0px 0px;
     }
     & .__sologan {
         text-align: left;
-        color: $header_1__colorText;
+        color: $header_1__colorTextSlogan;
         text-transform: uppercase;
         font-weight: bold;
+        margin: 24px 0px;
     }
     & .__services {
-        list-style: none;
-        margin: 0;
-        padding: 0;
         margin-top: 8px;
+        color: $header_1__colorTextService;
         &--link {
             display: block;
         }
         &--icon {
             @include circle(30px);
             background: $header_1__colorBackgroundIcon;
-            margin-left: 8px;
             color: $header_1__colorTextIcon;
             display: inline-block;
             position: relative;
@@ -44,18 +49,25 @@ $header_1__colorBorderEmail: $cl-dark-white !default;
         }
         &--text {
             text-transform: capitalize;
-            color: $header_1__colorText;
+            color: $header_1__colorTextSlogan;
             display: inline-block;
             vertical-align: middle;
             padding-left: 8px;
         }
     }
     & .__register {
+        padding: 24px 0px;
         &--label {
             font-weight: 500;
             text-transform: uppercase;
-            color: $header_1__colorText;
+            color: $header_1__colorTextRegister;
         }
-        padding: 48px 0px;
+        & .__btn {
+            &--submit {
+                background-color: $header_1__colorBackgroundBtnSubmit;
+                border: 1px solid $header_1__colorBackgroundBtnSubmit;
+                color: $header_1__colorTextBtnSubmit;
+            }
+        }
     }
 }
