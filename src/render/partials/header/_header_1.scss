@@ -1,4 +1,4 @@
-$header_1__imageBackground: $bg-book-blur-dark !default;
+$header_1__imageBackground: $bg-1600-1600-eeeeee !default;
 // Icon
 $header_1__colorBackgroundIcon: $cl-blue !default;
 $header_1__colorTextIcon: $cl-white !default;
@@ -12,11 +12,9 @@ $header_1__colorBackgroundBtnSubmit: $cl-blue !default;
 $header_1__colorTextBtnSubmit: $cl-white !default;
 .header_1 {
     background: $header_1__imageBackground no-repeat;
+    background-position: center;
     &.__container {
         margin: auto;
-    }
-    & .__menu {
-        padding-top: 8px;
     }
     & .__infor {
         padding: 48px 0px 0px 0px;
@@ -48,7 +46,6 @@ $header_1__colorTextBtnSubmit: $cl-white !default;
             }
         }
         &--text {
-            text-transform: capitalize;
             color: $header_1__colorTextSlogan;
             display: inline-block;
             vertical-align: middle;

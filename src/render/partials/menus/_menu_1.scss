@@ -1,17 +1,42 @@
+$menu_1__colorBorderMenu: $cl-light-white !default;
+$menu_1__colorBackgroundMenu: $cl-light-white !default;
 $menu_1__colorBackgroundIcon: $cl-blue !default;
-$menu_1__colorText: $cl-white !default;
-$menu_1__colorBorder: $cl-white !default;
+//
+$menu_1__colorTextMenu: $cl-black !default;
+$menu_1__colorTextMenuHover: $cl-blue !default;
+// Search
+$menu_1__colorBackgroundBtnSearch: $cl-transparent !default;
+$menu_1__colorTextBtnSearch: $cl-black !default;
+$menu_1__colorBorderBtnSearch: $cl-light-gray !default;
 .menu_1 {
+    & a,
+    input,
+    button {
+        font-size: $f-small;
+    }
+    &.menu {
+        &__background {
+            background: $menu_1__colorBackgroundMenu !important;
+            border: 1px solid $menu_1__colorBorderMenu !important;
+        }
+    }
     & .menu {
-        &__nav {
-            &--link {
-                text-transform: capitalize;
-                color: $menu_1__colorText;
-                &:hover {
-                    background-color: $menu_1__colorBackgroundIcon;
-                    border-radius: 4px;
-                    text-decoration: none;
-                }
+        &__brand {
+            text-transform: uppercase;
+        }
+        &__search {
+            text-transform: capitalize;
+            &--btn {
+                background: $menu_1__colorBackgroundBtnSearch;
+                color: $menu_1__colorTextBtnSearch;
+                border: 1px solid $menu_1__colorBorderBtnSearch;
+            }
+        }
+        &__link {
+            color: $menu_1__colorTextMenu !important;
+            &:hover,
+            &:active {
+                color: $menu_1__colorTextMenuHover !important;
             }
         }
     }
