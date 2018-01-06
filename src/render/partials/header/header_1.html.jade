@@ -1,19 +1,10 @@
-.header_1.h-100.menu_1.__container
-  ul.nav.__menu
-    - var menu=[{"text": "Home", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "features", "icon": "fa-home"}, {"text": "blog", "icon": "fa-home"}, {"text": "pages", "icon": "fa-home"}, {"text": "shortcodes", "icon": "fa-home"}, {"text": "", "icon": "fa-search"}, {"text": "", "icon": "fa-shopping-cart"}]
-      each item in menu
-        li.nav-item
-          a(href="#").nav-link.menu__nav--link
-            i.fa(class= item.icon)
-            span=" " + item.text
+.header_1.h-100.__container.container-fluid
   .row
-    .col-sm-3.offset-sm-1
+    .col-sm-4.offset-sm-1
       .__infor
-        h3.__sologan impress every
-          br
-          | visitor!
+        h3.__sologan 1-Click for alls
         ul.list-unstyled.__services
-          - var links=[{"text": "responsive template", "icon": "fa-paper-plane"}, {"text": "retina ready", "icon": "fa-hand-o-right"}, {"text": "155+ HTML Pages", "icon": "fa-thumbs-up"}, {"text": "mailchimp intergrated", "icon": "fa-cog"}]
+          - var links=[{"text": "Hơn 200 giao diện website", "icon": "fa-paper-plane"}, {"text": "Hỗ trợ SEO, Facebook, Google...", "icon": "fa-hand-o-right"}, {"text": "Dễ dàng tùy chỉnh giao diện - quản trị nội dung", "icon": "fa-thumbs-up"}, {"text": "Bảo mật website với SSL", "icon": "fa-cog"}]
             each item in links
               li
                 a.__services--link
@@ -21,9 +12,9 @@
                     i.fa(class= item.icon)
                   p.__services--text= item.text
       .__register
-        p.__register--label register for a free demo!
+        p.__register--label Sử dụng thử trong 7 ngày
         form.__form
           .input-group
-            input(type="text" placeholder="Enter Your Email Address...").form-control
+            input(type="text" placeholder="Nhập Email của bạn").form-control
             .input-group-append
-              input(type="submit" placeholder="Submit").btn.__btn--submit
+              input(type="submit" value="Dùng thử").btn.__btn--submit
