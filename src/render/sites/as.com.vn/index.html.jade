@@ -1,7 +1,7 @@
 extend ./../../../layouts/as.com.vn.jade
 block content
-  //-include ./../../partials/chat_box/chat_box_1.html.jade
-  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.w-100.menu_1.menu__background
+  //-include ./../../partials/chat_box/chat_box_simple.html.jade
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.w-100.menu_simple.menu__background
     a.navbar-brand.menu__brand(href='#')
       img(src='/images/logos/as.PNG',height="30")
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
@@ -48,5 +48,5 @@ block content
               .input-group-append
                 input(type="submit" value="Tìm kiếm").btn.btn-sm.menu__search--btn
 
-  include ./../../partials/header/header_1.html.jade
-  //-include ./../../partials/header/header_2.html.jade
+  include ./../../partials/header/header_intro_email.html.jade
+  //-include ./../../partials/header/header_welcome.html.jade

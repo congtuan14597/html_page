@@ -1,0 +1,19 @@
+$button_simple__colorBackgroundIcon: $cl-blue;
+$button_simple__colorText: $cl-white;
+.button_simple {
+    cursor: pointer;
+    outline: none;
+    & .btn {
+        &__circle {
+            @include btnBorder(24px, $button_simple__colorText, uppercase);
+            &:hover {
+                color: $button_simple__colorText;
+                background-color: $button_simple__colorBackgroundIcon;
+                border-color: $button_simple__colorBackgroundIcon;
+            }
+        }
+        &__border {
+            @include btnBorder(4px, $button_simple__colorBackgroundIcon, uppercase);
+        }
+    }
+}
