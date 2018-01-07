@@ -1,17 +1,17 @@
-$header_2__imageBackground: $bg-1600-1600-eeeeee !default;
-$header_2__colorText: $cl-white !default;
-.header_2 {
+$header_welcome__imageBackground: $bg-1600-1600-eeeeee !default;
+$header_welcome__colorText: $cl-white !default;
+.header_welcome {
     &.__container {
         margin: auto;
     }
     & .__menu {
         padding-top: 8px;
     }
-    background: $header_2__imageBackground no-repeat;
+    background: $header_welcome__imageBackground no-repeat;
     text-align: center;
     & .__text {
         padding: 48px 0;
-        color: $header_2__colorText;
+        color: $header_welcome__colorText;
     }
     & .__title {
         font-size: $f-largest;
@@ -19,9 +19,9 @@ $header_2__colorText: $cl-white !default;
         font-weight: bold;
     }
     & .__description {
-        margin: 20px;
+        margin: 24px;
     }
     & .__btn {
-        margin-top: 20px;
+        margin-top: 24px;
     }
 }
