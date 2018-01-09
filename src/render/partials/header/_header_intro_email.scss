@@ -59,6 +59,9 @@ $header_intro_email__colorTextBtnSubmit: $cl-white !default;
             text-transform: uppercase;
             color: $header_intro_email__colorTextRegister;
         }
+        & .__form {
+            max-width: 320px;
+        }
         & .__btn {
             &--submit {
                 background-color: $header_intro_email__colorBackgroundBtnSubmit;

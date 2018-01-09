@@ -1,7 +1,6 @@
 $button_simple__colorBackgroundIcon: $cl-blue;
 $button_simple__colorText: $cl-white;
 .button_simple {
-    cursor: pointer;
     outline: none;
     & .btn {
         &__circle {

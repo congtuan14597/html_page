@@ -1,14 +1,14 @@
-$header_welcome__imageBackground: $bg-1600-1600-eeeeee !default;
+$header_welcome__imageBackground: $bg-1600-1600-999999 !default;
 $header_welcome__colorText: $cl-white !default;
 .header_welcome {
+    background: $header_welcome__imageBackground no-repeat;
+    text-align: center;
     &.__container {
         margin: auto;
     }
     & .__menu {
         padding-top: 8px;
     }
-    background: $header_welcome__imageBackground no-repeat;
-    text-align: center;
     & .__text {
         padding: 48px 0;
         color: $header_welcome__colorText;
