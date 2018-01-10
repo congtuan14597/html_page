@@ -8,7 +8,8 @@
     "docpad-plugin-jade": "~2.10.0",
     "docpad-plugin-livereload": "~2.9.0",
     "docpad-plugin-sass": "~2.8.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jade-bootstrap": "^1.0.14"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
