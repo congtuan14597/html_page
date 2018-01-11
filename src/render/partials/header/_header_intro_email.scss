@@ -13,7 +13,7 @@ $header_intro_email__colorTextBtnSubmit: $cl-white !default;
 .header_intro_email {
     background: $header_intro_email__imageBackground no-repeat;
     background-position: center;
-    &.__container {
+    .__container { 
         margin: auto;
     }
     & .__infor {
