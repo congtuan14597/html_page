@@ -1,0 +1,27 @@
+$header_welcome__imageBackground: $bg-1600-1600-999999 !default;
+$header_welcome__colorText: $cl-white !default;
+.header_welcome {
+    background: $header_welcome__imageBackground no-repeat;
+    text-align: center;
+    &.__container {
+        margin: auto;
+    }
+    & .__menu {
+        padding-top: 8px;
+    }
+    & .__text {
+        padding: 48px 0;
+        color: $header_welcome__colorText;
+    }
+    & .__title {
+        font-size: $f-largest;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    & .__description {
+        margin: 24px;
+    }
+    & .__btn {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,20 @@
+.header_intro_email.h-100.__container.container-fluid
+  .row
+    .col-sm-5.offset-sm-1
+      .__infor
+        h3.__sologan 1-Giải pháp cho tất cả
+        ul.list-unstyled.__services
+          - var links=[{"text": "Đa dạng Website: Thương mại điện tử, Tin tức...", "icon": "fa-paper-plane"}, {"text": "Hỗ trợ SEO, Facebook, Google...", "icon": "fa-hand-o-right"}, {"text": "Dễ dàng tùy chỉnh giao diện - quản trị nội dung", "icon": "fa-thumbs-up"}, {"text": "Mở rộng API cho các nhà phát triển", "icon": "fa-cog"}, {"text": "Bảo mật website với công nghệ SSL", "icon": "fa-cog"}]
+            each item in links
+              li
+                a.__services--link
+                  span.__services--icon
+                    i.fa(class= item.icon)
+                  p.__services--text= item.text
+      .__register
+        p.__register--label Dùng thử Website miễn phí trong 7 ngày
+        form.__form
+          .input-group
+            input(type="text" placeholder="Nhập Email của bạn").form-control
+            .input-group-append
+              input(type="submit" value="Dùng thử").btn.__btn--submit

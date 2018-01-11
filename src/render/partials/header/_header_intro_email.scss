@@ -1,0 +1,73 @@
+$header_intro_email__imageBackground: $bg-1600-1600-eeeeee !default;
+// Icon
+$header_intro_email__colorBackgroundIcon: $cl-blue !default;
+$header_intro_email__colorTextIcon: $cl-white !default;
+// Text
+$header_intro_email__colorTextSlogan: $cl-black !default;
+$header_intro_email__colorTextService: $cl-black !default;
+$header_intro_email__colorTextRegister: $cl-black !default;
+//
+$header_intro_email__colorBorderEmail: $cl-white !default;
+$header_intro_email__colorBackgroundBtnSubmit: $cl-blue !default;
+$header_intro_email__colorTextBtnSubmit: $cl-white !default;
+.header_intro_email {
+    background: $header_intro_email__imageBackground no-repeat;
+    background-position: center;
+    .__container { 
+        margin: auto;
+    }
+    & .__infor {
+        padding: 48px 0px 0px 0px;
+    }
+    & .__sologan {
+        text-align: left;
+        color: $header_intro_email__colorTextSlogan;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 24px 0px;
+    }
+    & .__services {
+        margin-top: 8px;
+        color: $header_intro_email__colorTextService;
+        &--link {
+            display: block;
+        }
+        &--icon {
+            @include circle(36px);
+            background: $header_intro_email__colorBackgroundIcon;
+            color: $header_intro_email__colorTextIcon;
+            display: inline-block;
+            position: relative;
+            &>i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &--text {
+            color: $header_intro_email__colorTextSlogan;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 8px;
+        }
+    }
+    & .__register {
+        padding: 24px 0px;
+        &--label {
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $header_intro_email__colorTextRegister;
+        }
+        & .__form {
+            max-width: 320px;
+        }
+        & .__btn {
+            &--submit {
+                background-color: $header_intro_email__colorBackgroundBtnSubmit;
+                border: 1px solid $header_intro_email__colorBackgroundBtnSubmit;
+                color: $header_intro_email__colorTextBtnSubmit;
+            }
+        }
+    }
+}

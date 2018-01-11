@@ -1,0 +1,47 @@
+$menu_simple__colorBorderMenu: $cl-light-white !default;
+$menu_simple__colorBackgroundMenu: $cl-light-white !default;
+$menu_simple__colorBackgroundIcon: $cl-blue !default;
+//
+$menu_simple__colorTextMenu: $cl-black !default;
+$menu_simple__colorTextMenuHover: $cl-blue !default;
+// Search
+$menu_simple__colorBackgroundBtnSearch: $cl-transparent !default;
+$menu_simple__colorTextBtnSearch: $cl-black !default;
+$menu_simple__colorBorderBtnSearch: $cl-light-gray !default;
+.menu_simple {
+    & a,
+    input,
+    button {
+        font-size: $f-small;
+    }
+    & a,
+    button {
+        cursor: pointer;
+    }
+    &.menu {
+        &__background {
+            background: $menu_simple__colorBackgroundMenu !important;
+            border: 1px solid $menu_simple__colorBorderMenu !important;
+        }
+    }
+    & .menu {
+        &__brand {
+            text-transform: uppercase;
+        }
+        &__search {
+            text-transform: capitalize;
+            &--btn {
+                background: $menu_simple__colorBackgroundBtnSearch;
+                color: $menu_simple__colorTextBtnSearch;
+                border: 1px solid $menu_simple__colorBorderBtnSearch;
+            }
+        }
+        &__link {
+            color: $menu_simple__colorTextMenu !important;
+            &:hover,
+            &:active {
+                color: $menu_simple__colorTextMenuHover !important;
+            }
+        }
+    }
+}

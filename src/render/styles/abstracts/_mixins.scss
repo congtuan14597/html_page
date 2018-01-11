@@ -1,0 +1,20 @@
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+}
+
+@mixin textAlign($textAlign) {
+    text-align: $textAlign;
+}
+
+// Button
+@mixin btnBorder($borderRadius, $clBorder, $textTransform) {
+    padding: 10px 25px;
+    border-radius: $borderRadius;
+    border: 1px solid $clBorder;
+    color: $clBorder;
+    text-transform: $textTransform;
+    font-size: $f-small;
+    background: transparent;
+}
