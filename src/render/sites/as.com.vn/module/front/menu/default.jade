@@ -1,0 +1,47 @@
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top.w-100.menu_simple.menu__background
+  a.navbar-brand.menu__brand(href='#')
+    img(src='/images/logos/as.PNG',height="24")
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.dropdown
+        a.nav-link.menu__link Bảng giá
+      li.nav-item.dropdown
+        a.nav-link.menu__link Kho giao diện
+      li.nav-item.dropdown
+        a.nav-link.menu__link Hướng dẫn sử dụng
+      li.nav-item.dropdown
+        a.nav-link.menu__link Tin tức
+      li.nav-item.dropdown
+        a#navbarDropdownSolution.nav-link.menu__link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Giải pháp
+        .dropdown-menu(aria-labelledby='navbarDropdownSolution')
+          a.dropdown-item(href='#') Doanh nghiệp
+          a.dropdown-item(href='#') Cá nhân
+      li.nav-item.dropdown
+        a#navbarDropdownSupport.nav-link.menu__link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Chăm sóc khách hàng
+        .dropdown-menu(aria-labelledby='navbarDropdownSupport')
+          a.dropdown-item(href='#') Phản ánh/khiếu nại
+          a.dropdown-item(href='#') Tư vấn
+      li.nav-item.dropdown
+        a#navbarDropdownCollaborators.nav-link.menu__link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Cộng tác viên
+        .dropdown-menu(aria-labelledby='navbarDropdownCollaborators')
+          a.dropdown-item(href='#') Lập trình HTML/CSS/Javascript
+          a.dropdown-item(href='#') Bán hàng
+          a.dropdown-item(href='#') Quản trị
+          .dropdown-divider
+          a.dropdown-item(href='#') Đăng ký
+    ul.navbar-nav.ml-auto
+      li.nav-item.px-lg-3
+        .input-group
+          input(type="text" placeholder="Từ khóa").form-control
+          .input-group-append
+            input(type="submit" value="Tìm kiếm").btn.menu__search--btn
+      li.nav-item.dropdown
+        a#navbarDropdownRegister.nav-link.menu__link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Đăng nhập
+        .dropdown-menu(aria-labelledby='navbarDropdownRegister')
+          a.dropdown-item(href='#') Facebook
+          a.dropdown-item(href='#') Google
+          .dropdown-divider
+          a.dropdown-item(href='#') Đăng nhập
+          a.dropdown-item(href='#') Đăng ký

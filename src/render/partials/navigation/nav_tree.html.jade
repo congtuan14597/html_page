@@ -1,6 +1,6 @@
-nav.nav-tree
+nav.navbar.navbar-expand-lg.navbar-light.nav_tree
   - var menu = [{name: "Home", href: "#"}, {name: "Porfolio", href: "#"}, {name: "Pages", href: "#"}, {name: "Elements", href: "#"}, {name: "Blog", href: "#"}, {name: "Shop", href: "#"}, {name: "Contact", href: "#"}] 
-    ul.__list
+    ul.__list.navbar-nav.mr-auto
       each item in menu
-        li.__item
-          a(href="#{item.href}").__link=item.name
+        li.nav-item.__item
+          a(href="#{item.href}").nav-link.__link=item.name
