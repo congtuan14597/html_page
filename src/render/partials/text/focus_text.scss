@@ -3,3 +3,26 @@
 // SEO TEMPUS .....
 // SAVE 50%
 // Button tree
+.contain_text {
+  position: relative;
+  top: 30px;
+}
+.text-line-frist {
+  color: $cl-light-black;
+}
+.focus_text {
+  position: inherit;
+  top: -350px;
+  right: 150px;
+  float: right;
+}
+.img_focus_text{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+}
+.btn_shop_now {
+  position: inherit;
+  top: -200px;
+  float: right;
+}
