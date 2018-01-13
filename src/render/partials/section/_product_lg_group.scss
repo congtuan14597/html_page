@@ -1,1 +1,13 @@
 // Group 3 image of product large PLANTS, VASES, SHELVE
+@import '../product/product_lg';
+.product_large_image {
+  margin: 50px 100px;
+}
+.image_left {
+  &.__image--under {
+      margin-top: 30px;
+    }
+}
+.image_shelves {
+  margin-left: 10px;
+}

@@ -4,6 +4,7 @@
   "description": "New DocPad project without using a skeleton",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
+    "bootstrap-sass": "^3.3.7",
     "docpad": "~6.79.4",
     "docpad-plugin-jade": "~2.10.0",
     "docpad-plugin-livereload": "~2.9.0",
