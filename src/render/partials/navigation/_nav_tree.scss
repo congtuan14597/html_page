@@ -1,0 +1,15 @@
+$nav_tree__colorBorderBottom: purple !default;
+$nav_tree__colorTextLink: $cl-dark-gray !default;
+$nav_tree__colorHoverTextLink: $cl-black !default;
+.nav_tree {
+    & .__item {
+      margin: 0px 16px;
+    }
+    & .__link {
+        color: $nav_tree__colorTextLink !important;
+        &:hover {
+            color: $nav_tree__colorHoverTextLink !important;
+            border-bottom: 2px solid $nav_tree__colorBorderBottom;
+        }
+    }
+}
