@@ -1,2 +1,30 @@
 // Defines product with medium image
 // is one of products in New Arrivals
+$cl-background: white;
+$cl-item-text: gray;
+.__text {
+  background: $cl-background !important;
+  .__title {
+    font-family: 'Macondo', cursive;
+    font-size: 20px;
+    .__line-active {
+      background: $cl-item-text;
+      margin: 0 0 30px 510px; 
+      width: 60px;
+      height: 5px;
+      border-radius: 3px;
+    }
+  }
+}
+.__img_product {
+  width: 260px;
+  height: 280px;
+}
+.__img_medium_lable {
+  background: $cl-purple;
+  color: $cl-dark-black;
+  width: 80px;
+  height: 40px;
+  padding-top: -10px;
+  text-align: center;
+}
