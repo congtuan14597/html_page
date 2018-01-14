@@ -1,2 +1,46 @@
 // Defines product with large image
 // are PLANTS, VASES, SHELVES
+// $cl-dark-gray: #777;
+
+.image_left {
+  width: 350px;
+  height: 350px;
+}
+.image_right {
+  width: 700px;
+  height: 730px;
+}
+.text{
+  &--above {
+    position: absolute;
+    top: 30px;
+    left: 170px;
+   }
+  &--under {
+    margin-left: 20px;
+    margin-top: -320px;
+  }
+  &--right {
+    margin-left: 20px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+  }
+}
+.text_line_first {
+  color: $cl-light-black;
+  &--text_right {
+    font-size: 27px;
+  }
+}
+.text_line_second {
+  font-size: 43px;
+  font-weight: 800;
+  position: relative;
+  top: -25px;
+  &--text_right {
+    font-size: 60px;
+    // font-weight: 800;
+    // margin-top: -25px;
+  }
+}
