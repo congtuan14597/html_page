@@ -18,3 +18,42 @@
     font-size: $f-small;
     background: transparent;
 }
+
+//footer 
+@mixin location($pos, $top, $left) {
+  position: $pos;
+  top: $top;
+  left: $left;
+}
+
+@mixin marginLeft($pos, $margin-l) {
+  position: $pos;
+  margin-left: $margin-l;
+}
+
+@mixin font($f-weight, $f-family) {
+  font-weight: $f-weight;
+  font-family: $f-family;
+}
+
+@mixin fontTitle($pos, $top, $color, $f-family, $f-weight, $f-size) {
+  position: $pos;
+  top: $top;
+  color: $color;
+  font-family: $f-family;
+  font-weight: $f-weight;
+  font-size: $f-size;
+}
+
+@mixin fontHr($pos, $top, $width, $border, $color) {
+  position: $pos;
+  top: $top;
+  width: $width;
+  border: $border;
+  color: $color;
+}
+
+@mixin height($height, $background) {
+  height: $height;
+  background: $background;
+}
