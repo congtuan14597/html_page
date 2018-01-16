@@ -1,67 +1,35 @@
 .footer 
-.footer__title 
-  h2.footer__title.__h2 Have Project? We're Here to Help You Create It
-.footer__btn 
-  button.footer__btn.__button CONTACT US 
-.footer-list 
-  .about-us 
-    h4.about-us__h4 About Us 
-    hr.about-us__hr 
-    .about-us__list-item 
-      img.about-us__list-item.__img(src="../../../../images/logos/placeholder.png", alt="")
-      span.about-us__list-item.__span 90-120 Austrailia 
-    .about-us__list-item 
-      img.about-us__list-item.__img(src="../../../../images/logos/phone-call.png", alt="")
-      span.about-us__list-item.__span + 613 9559 9669 
-    .about-us__list-item 
-      img.about-us__list-item.__img(src="../../../../images/logos/close-envelope.png", alt="")
-      span.about-us__list-item.__span support@gmail.com:))
-  .recent-new 
-    h4.recent-new__h4 Recent News 
-    hr.recent-new__hr 
-    .recent-new__new1
-      img(src="../../../../images/logos/white.png", alt="")
-      span 
-    .recent-new__new2 
-      img(src="../../../../images/logos/white.png", alt="")
-      span 
-    .recent-new__new3 
-      img(src="../../../../images/logos/white.png", alt="")
-  .our-gallery 
-    h4.our-gallery__h4 Our Gallery 
-    hr.our-gallery__hr 
-    .list-img  
-      ul.img-group  
-        li.img-group__item 
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-      ul.img-group 
-        li.img-group__item 
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-        li.img-group__item
-          a(href="")
-            img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
-  .link 
-    p.link__p www.DownloadNewThemes.com 
-  .btn-right 
-    button.btn-right__button 
-      img.btn-right__button.__img(src="../../../../images/logos/l.png", alt="")
+  .container
+    .d-inline-flex.flex-row.__group
+      .about-us 
+        h4.about-us__h4 About Us 
+        .about-us__list-item 
+          img.about-us__list-item.__img(src="../../../../images/logos/placeholder.png", alt="")
+          span.about-us__list-item.__span 90-120 Austrailia 
+        .about-us__list-item 
+          img.about-us__list-item.__img(src="../../../../images/logos/phone-call.png", alt="")
+          span.about-us__list-item.__span + 613 9559 9669 
+        .about-us__list-item 
+          img.about-us__list-item.__img(src="../../../../images/logos/close-envelope.png", alt="")
+          span.about-us__list-item.__span support@gmail.com:))
+      .recent-new 
+        h4.recent-new__h4 Recent News 
+        - for ( var j = 0; j < 3; ++j ) {
+          .recent-new__item
+            img(src="../../../../images/logos/white.png", alt="")
+        - }
+      .our-gallery 
+        h4.our-gallery__h4 Our Gallery 
+        .list-img 
+          - for (var i = 0; i < 2; ++i) {
+            ul.img-group  
+              - for (var k = 0; k < 4; ++k) {
+                li.img-group__item 
+                  a(href="")
+                    img.img-group__item.__img(src="../../../../images/logos/white.png", alt="")
+              - }
+          - }
+  p.link www.DownloadNewThemes.com 
 .footer__coppyright 
 
 

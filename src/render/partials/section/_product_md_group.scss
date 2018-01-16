@@ -1,24 +1,20 @@
 // product contain image and focus_text
-@import '../../../partials/product/product_md';
+// @import '../../../partials/product/product_md';
 $cl-background: white;
 $cl-item-text: gray;
 $cl-purple: #5856d6;
 $cl-dark-black: #000;
-.product_sale {
+
+.product_md_group {
     background: $cl-background;
     margin: 0px 70px;
     font-family: 'Lato', sans-serif;
     .__container {
-        margin-top: -60px;
         & .__img_medium_label {
-           margin-top: -150px !important;
+          margin-top: -150px;
         }
-        // & .__list-img {
-        //     margin-top: -30px !important; 
-        // }
         & .__img_medium {
             margin-bottom: 60px;
-            // font-weight: bold;
             & .__product_rating {
                 margin-top: 20px;
                 font-size: 20px;
@@ -26,4 +22,3 @@ $cl-dark-black: #000;
         }
     }
 }    
-

@@ -36,21 +36,21 @@
   font-family: $f-family;
 }
 
-@mixin fontTitle($pos, $top, $color, $f-family, $f-weight, $f-size) {
-  position: $pos;
-  top: $top;
+@mixin fontTitle($color, $f-family, $f-weight, $f-size) {
   color: $color;
   font-family: $f-family;
   font-weight: $f-weight;
   font-size: $f-size;
 }
 
-@mixin fontHr($pos, $top, $width, $border, $color) {
-  position: $pos;
-  top: $top;
-  width: $width;
-  border: $border;
-  color: $color;
+@mixin fontHr($color) {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: $color;
 }
 
 @mixin height($height, $background) {

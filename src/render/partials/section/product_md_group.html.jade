@@ -1,0 +1,21 @@
+.product_md_group
+  .__text.text-center
+    p.__title Hello World
+    h2 New Arrivals
+    p Lorem Ipsum is simply dummy text of the printing and typesetting 
+  .__container
+    - for (var i = 0; i < 2; ++i) {
+      .__list-img.row
+        - for (var j = 0; j < 4; ++j) {
+        .col-sm-3.__img_medium
+          img.__img_product(src="./../../../../images/backgrounds/1600_1600_666666.png")
+          .__product_rating.rating
+            span ☆ 
+              span ☆
+                span ☆ 
+                  span ☆ 
+                    span ☆
+          p text1
+          p $49.00
+        - }
+    - }
