@@ -1,2 +1,59 @@
 // Defines product with small image
 // is one of products in Featured products, Most popular, On sale
+// Defines product with small image
+// is one of products in Featured products, Most popular, On sale
+$cl__gray--product-sale: #efefef;
+.product_sale {
+  table {
+    width: 1200px;
+    margin: 0px 100px;
+  }
+  tr {
+  }
+  th {
+    
+  }
+  &--col_name {
+    margin-left: 15px;
+  }
+  .line {
+    // display: none;
+    width: 30px;
+    height: 3px;
+    margin-left: 15px;
+    background: $cl__gray--product-sale;
+  }
+  td {
+    border-collapse: 10px;
+    width: 33.33%;
+  }
+  &__item {
+    & .item {
+      &--img{
+        width: 75px;
+        height: 75px;
+        margin: 15px;
+        float: left;
+      }
+      &__content {
+        float: left;
+        font-size: 12px;
+        margin-top: 15px;
+        h6 {
+          font-size: 12px;
+        }
+        &--title {
+          font-weight: bold;
+        }
+        &--rating {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        &--price {
+
+        }
+      }
+    }
+  }
+  
+}
