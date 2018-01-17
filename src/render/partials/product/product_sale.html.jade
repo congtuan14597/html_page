@@ -1,0 +1,29 @@
+.product_sale
+  table(cellspacing="10")
+    tr
+      th 
+        a.product_sale--col_name Feature Products
+          .line 
+      th
+        a.product_sale--col_name Most Popular
+          .line
+      th
+        a.product_sale--col_name On Sale
+          .line
+    - for (var i = 0; i < 3; ++i) {
+      tr
+        - for (var j = 0; j < 3; ++j) {
+          td
+            article.product_sale__item.item
+              img.item--img(src="./../../../../images/backgrounds/1600_1600_666666.png")
+              .item__content
+                h6.item__content--title Ceramic Textured
+                a.item__content--rating.fa.fa-star-o 
+                a.item__content--rating.fa.fa-star-o 
+                a.item__content--rating.fa.fa-star-o 
+                a.item__content--rating.fa.fa-star-o 
+                a.item__content--rating.fa.fa-star-o 
+                p.item__content--price $
+                  span 32.000
+        - }
+    - }

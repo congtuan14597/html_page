@@ -1,0 +1,21 @@
+.contact {
+  background: $cl-white;
+  padding: 70px 0;
+  .__title {
+    text-align: center;
+    background: $cl-white;
+    color: $cl-black;
+    @include font(700, Helvetica Arial sans-serif);
+  }
+  .__btn {
+    @include font(700, initial);
+    @include height(37px, $cl-light-white);
+    margin-top: 10px;
+    width: 160px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 14px;
+    color: $cl-light-black;
+    box-shadow: 7px 7px 5px -4px #888888;
+  }
+}

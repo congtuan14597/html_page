@@ -1,0 +1,24 @@
+// product contain image and focus_text
+// @import '../../../partials/product/product_md';
+$cl-background: white;
+$cl-item-text: gray;
+$cl-purple: #5856d6;
+$cl-dark-black: #000;
+
+.product_md_group {
+    background: $cl-background;
+    margin: 0px 70px;
+    font-family: 'Lato', sans-serif;
+    .__container {
+        & .__img_medium_label {
+          margin-top: -150px;
+        }
+        & .__img_medium {
+            margin-bottom: 60px;
+            & .__product_rating {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}    
