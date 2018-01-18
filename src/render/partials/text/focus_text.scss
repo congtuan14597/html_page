@@ -3,26 +3,46 @@
 // SEO TEMPUS .....
 // SAVE 50%
 // Button tree
-.contain_text {
+.focus_text {
   position: relative;
   top: 30px;
-}
-.text-line-frist {
-  color: $cl-light-black;
-}
-.focus_text {
-  position: inherit;
-  top: -350px;
-  right: 150px;
-  float: right;
-}
-.img_focus_text{
-  width: 100%;
-  height: 500px;
-  margin-bottom: 50px;
-}
-.btn_shop_now {
-  position: inherit;
-  top: -200px;
-  float: right;
+  .__img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .__text {
+    color: $cl-light-black;
+    position: inherit;
+    bottom: 380px;
+    right: 150px;
+    float: right;
+    text-align: center;
+    .__text_line_first {
+      font-size: 27px;
+    }
+    .__text_line_second {
+      font-size: 14px;
+    }
+    .__text_line_third {
+      font-size: 60px;
+      color: $cl-dark-black;
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+  .__btn{
+    position: inherit;
+    top: -170px;
+    float: right;
+    left: 200px;
+    font-weight: 700;
+    font-family: initial;
+    background: $cl-light-white;
+    width: 160px;
+    height: 37px;
+    border: 1px solid $cl-white;
+    border-radius: 1px;
+    font-size: 12px;
+    box-shadow: 5px 5px 7px -4px $cl-dark-gray;
+  }
 }
