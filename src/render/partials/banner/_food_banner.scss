@@ -1,2 +1,17 @@
 // Defines banner special food or only background image
 // Should define dynamic text on banner
+.food_banner {
+  .__banner-bg {
+    width: 100%;
+    height: 350px;
+    margin-top: 380px;
+  }
+  .__text-banner {
+    text-align: center;
+    margin-top: -200px;
+  }
+  .__text_intro_banner {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+  }
+}
