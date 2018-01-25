@@ -1,2 +1,5 @@
 extends ./../../../../../layouts/_food_site.jade
 block content
+  include ./../../../../partials/menus/menu_food.html.jade
+  
+  != getBlock('scripts').toHTML()
