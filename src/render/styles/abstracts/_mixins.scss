@@ -57,3 +57,13 @@
   height: $height;
   background: $background;
 }
+
+@mixin square($length) {
+  width: $length;
+  height: $length;
+}
+
+@mixin rectangle($w, $h) {
+  width: $w;
+  height: $h;
+}

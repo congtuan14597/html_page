@@ -1,2 +1,33 @@
 // Defines group item menu
 // Include title and back ground + items food
+$cl-food-dark: #242424;
+$cl-food-bright: #bbbbbb;
+
+.menu_food {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  .__title {
+    color: $cl-food-dark;
+    padding-top: 30px;
+    font-weight: bold;
+  }
+  .__line {
+    @include rectangle(30px, 5px);
+    background: $cl-food-dark;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .__aper {
+    .__title {
+      color: $cl-food-bright;
+      padding: 30px;
+    }
+  }
+  
+  .menu_food__list {
+
+  }
+  
+}
+@import '_item_food.scss';

@@ -1,0 +1,86 @@
+- var title_aper1 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong"];
+- var title_aper2 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong", "PIZZA ABCDE"];
+- var title_desert1 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong"];
+- var title_desert2 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong", "PIZZA ABCDE"];
+- var descr_aper1 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong"];
+- var descr_aper2 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong", "PIZZA ABCDE"];
+- var descr_desert1 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong"];
+- var descr_desert2 = ["PIZZA MEXICANA", "PIZZA QUATRO", "PIZZA Phong", "PIZZA ABCDE"];
+.menu_food
+  .__title MENU
+  .__line
+  .__aper
+    ._title FOOD AND APERITIES
+    .menu_food__list
+      .row
+        .col-12.col-md-2
+        .col-12.col-md-4
+          for t in title_aper1
+            .media.item_food
+              .media-body.textRight
+                h4.media-heading.__title= t
+                  h5.__descr I wanna type something for it so I repeat this line to make it longer
+              .pull-right
+                img.__img.media-object(src="http://placehold.it/180x200/456")
+        .col-12.col-md-4
+          for t in title_aper2
+            .media.item_food
+              .media-body.textRight
+                h4.media-heading.__title= t
+                  h5.__descr I wanna type something for it so I repeat this line to make it longer
+              .pull-right
+                img.__img.media-object(src="http://placehold.it/180x200/456")
+  .__desert
+    .list_title DESERTS
+    .menu_food__list
+      .row
+        .col-12.col-md-2
+        .col-12.col-md-4
+          for t in title_desert1
+            .media.item_food
+              .media-body.textRight
+                h4.media-heading.__title= t
+                  h5.__descr I wanna type something for it so I repeat this line to make it longer
+              .pull-right
+                img.__img.media-object(src="http://placehold.it/180x200/456")
+        .col-12.col-md-4
+          for t in title_desert2
+            .media.item_food
+              .media-body.textRight
+                h4.media-heading.__title= t
+                  h5.__descr I wanna type something for it so I repeat this line to make it longer
+              .pull-right
+                img.__img.media-object(src="http://placehold.it/180x200/456")
+//- for t in title
+//-   .col-12.col-md-4
+//-     .media
+//-       a.pull-right
+//-         img.media-object(src="http://placehold.it/180x200/456")
+//-       .media-body
+//-         h4.media-heading= t
+//-           h5 I wanna type something for it
+//-         h5 And I think it's enough right now
+//- - var droids = ["R2D2", "C3PO", "BB8"];
+//- div
+//-   h1 Famous Droids from Star Wars
+//-   for name in droids
+//-     div.card
+//-       h2= name
+//- <div class="row">
+//-   <div class="col-xs-12 col-md-8">
+//-    	<div class="media">
+//-         <a href="#" class="pull-left">
+//-             <img src="http://placehold.it/180x200/456" class="media-object" alt="Sample Image">
+//-         </a>
+//-         <div class="media-body">
+//-           <h1 class="media-heading">Bootstrap thumbnail example</h1>
+//-             <h4>Using the .media and .media-body built-in classes</h4>
+//-           <h4>Simple trick, just apply pull-left to the image</h4>
+//-         </div>
+//-     </div>
+//-     <hr>
+//-   </div>
+//-     <div class="col-xs-12 col-md-4">
+//-       <h3>Example 1</h3>
+//-   </div>
+//- </div>

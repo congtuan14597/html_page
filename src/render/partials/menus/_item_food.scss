@@ -1,2 +1,19 @@
 // Defines 1 item of menu (title of text and description)
 // Ex: Pizza... + description
+.item_food {
+  text-align: left;
+  padding: 10px;
+  .__title {
+    color: $cl-food-dark;
+    font-size: 15px;
+    padding: 0px;
+  }
+  .__descr {
+    color: $cl-food-bright;
+    font-size: 15px;
+  }
+  .__img {
+    @include square(50px);
+    margin-top: 20px;
+  }
+}
