@@ -1,2 +1,41 @@
 // Define both navigation and logo and banner
 // Reuse navigation of tree_site
+$cl-white: white;
+.header_food {
+  width: 100%;
+ 
+  .__header-bg {
+    height: 450px;
+    width: 100%;
+  }
+  .__text {
+    color: $cl-white;
+    text-align: center;
+    margin-top: -300px;
+    .__title {
+      font-family: 'Berkshire Swash', cursive;
+      font-size: 50px;
+    }
+    .__text_intro {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+    }
+  }
+  .__nav-header {
+    margin-top: -270px;
+    .__img-logo {
+      position: relative;
+      z-index: 1;
+      float: left;
+      margin-left: 30px;
+      width: 80px;
+      height: 50px;
+    }
+    .__nav_food {
+        float: right;
+        .nav-link {
+          color: $cl-white;;
+        }
+    }
+  }
+}
