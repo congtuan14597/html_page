@@ -1,2 +1,32 @@
 // Define a food 
 // ex: LASAGNA + text + image
+.text_food {
+  text-align: center;
+  .__name_food {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 50px;
+    .__first_line {
+      margin-top: -25px;
+    }
+    .__second_line {
+      margin-top: -20px;      
+    }
+  }
+  .__intro_food {
+    font-size: 10px;
+    margin-top: 30px;
+    line-height: 5px;
+  }
+  .__origin_food {
+    font-size: 12px;
+    margin-top: 35px;
+  }
+}
+.img_food {
+  margin-left: -15px;
+  .__img {
+    width: 250px;
+    height: 250px;
+   }
+}

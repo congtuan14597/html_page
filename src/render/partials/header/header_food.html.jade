@@ -1,0 +1,16 @@
+link(href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Josefin+Sans" rel="stylesheet")
+.header_food
+  img.__header-bg(src="./../../../../images/backgrounds/1600_1600_666666.png")
+  .__text
+    p.__title
+      |Taicco's
+    p.__text_intro
+      |ITALIAN SPECIALITIES
+  .__nav-header
+    img.__img-logo(src="./../../../../images/logos/white.png")
+    nav.navbar.navbar-expand-lg.navbar-light.nav_tree.__nav_food
+      - var menu = [{name: "Home", href: "#"}, {name: "Porfolio", href: "#"}, {name: "Pages", href: "#"}, {name: "Elements", href: "#"}, {name: "Blog", href: "#"}, {name: "Shop", href: "#"}, {name: "Contact", href: "#"}] 
+        ul.__list.navbar-nav.mr-auto
+          each item in menu
+            li.nav-item.dropdown.__item
+              a(href="#{item.href}").nav-link.dropdown-toggle=item.name
